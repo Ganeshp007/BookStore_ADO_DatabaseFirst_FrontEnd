@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../Styles/User/LoginAndSignup.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>BookStore-SignUp</title>
+</head>
+
+<body>
+    <div class="bodyContainer">
+        <div class="mainContainer">
+            <div class="logoContainer">
+                <img src="../../Assets/LoginAnsSignup/SignUpLogo.png">
+                <span class="logo-text">ONLINE BOOK SHOPPING</span>
+            </div>
+            <div class="signupContainer">
+                <input type="checkbox" id="chkbox">
+                <div class="buttons">
+                    <label for="chkbox" class="login btn"><span>LOGIN</span></label>
+                    <label for="chkbox" class="SignUp btn"><span>SIGNUP</span></label>
+                </div>
+                <div class="selectionPill"></div>
+                <div class="loginForm">
+                    <div id="div1">
+                        <label class="inputLable">Email Id</label>
+                        <input type="username" id="LoginEmail" class="beforeinput" class="afterinput" 
+                            placeholder="Username123@gmail.com *" required>
+                    </div>
+                    <div id="div2">
+                        <label class="inputLable">Password</label>
+                        <input type="password" id="LoginPassword" class="beforeinput password" class="afterinput" placeholder="Password *" required>
+                        <div class="iconeye">
+                            <img src="../../Assets/LoginAnsSignup/eyehide.png" 
+                            onclick="show('LoginPassword');" id="eye1">
+                        </div>
+                    </div>
+                    <a href="" class="loginFormLink">Forgot Password?</a>
+                    <div class="form-btn">
+                        <button id="Login" class="submit-btn">Login</button>
+                    </div>
+                    <div class="footerOR">
+                        <hr>
+                        <span id="OR"> OR </span>
+                        <hr>
+                    </div>
+                    <div class="loginFooter">
+                        <a href="https://www.facebook.com/login/" class="formLink a1">Facebook</a>
+                        <a href="https://accounts.google.com" class="formLink a2">Google</a>
+                    </div>
+
+                </div>
+
+                <div class="signupForm">
+                    <div id="div3">
+                        <label class="inputLable">Full Name</label>
+                        <input type="fname" class="beforeinput" class="afterinput" id="Fname"
+                            placeholder="Full Name *">
+                        <span id="nameHint1" class="Errmsg"></span>
+                    </div>
+                    <div id="div4">
+                        <label class="inputLable">Email Id</label>
+                        <input type="username" class="beforeinput" class="afterinput" id="Uname"
+                            placeholder="Username123@gmail.com *">
+                        <span id="UsernameHint" class="form-hint" class="Errmsg"></span>
+                    </div>
+                    <div id="div5">
+                        <label class="inputLable">Password</label>
+                        <input type="password" id="pass" class="beforeinput password" class="afterinput" 
+                            placeholder="Password *">
+                        <div class="iconeye">
+                         <img src="../../Assets/LoginAnsSignup/eyehide.png" onclick="show('pass');" id="eye2">
+                        </div>
+                        <span id="passHint" class="form-hint" class="Errmsg"></span>
+                    </div>    
+                    <div id="div6">
+                        <label class="inputLable">Mobile No</label>
+                        <input type="text" id="MobileNo" class="beforeinput" class="afterinput" placeholder="Mobile No *">
+                        <span id="MobHint" class="form-hint" class="Errmsg"></span>
+                    </div>
+                    <button id="Signup" class="submit-btn">Signup</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script src="../../Scripts/User/LoginAndSignup.js"></script>
+</html>
