@@ -93,7 +93,7 @@ window.addEventListener('DOMContentLoaded', () => {
         console.log(result);
         alert('User SignUp Sucessfull...Please Login');
         ResetSignupPage();
-        window.location.href='http://127.0.0.1:5500/Pages/User/LoginAndSignup.html';
+        window.location.href='http://127.0.0.1:5501/Pages/User/LoginAndSignup.html';
       },
       error: function (error) {
         console.log(error);
