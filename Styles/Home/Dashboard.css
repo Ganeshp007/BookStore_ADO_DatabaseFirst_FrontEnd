@@ -1,0 +1,283 @@
+body{
+    font-family: sans-serif;
+    padding: 0%;
+    margin: 0%;
+}
+
+.headerContainer{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    min-height: 55px;
+    max-height: 55px;
+    background-color:  rgb(189, 10, 10);
+}
+
+.logo{
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0% 3% 0% 12%;
+}
+
+#book{
+    background-color:  rgb(226, 6, 6);
+    width: 35px ;
+}
+
+#logotext{
+    padding: 2px 0px 0px 7px;
+    color: white;
+    font: 1.3em sans-serif;
+}
+
+.searchbox{
+    display: flex;
+    flex-direction:row ;
+    align-items: center;
+    width: 40%;
+    height: 38px;
+    background-color: white;
+    margin-top: 7px;
+    border-radius: 8px;
+}
+
+.searchbox .searchicon{
+    display: flex;
+    align-items: center;
+    background: transparent;
+    margin: 0px 10px 0px 10px;
+}
+
+.searchbox button{
+    border: transparent;
+}
+
+.searchbox img{
+   width: 22px;
+   height: 25px;
+}
+
+.searchbox button:hover{
+    background-color: lightgrey;
+    border-radius: 50%;
+}
+
+.searchbox input{
+    outline: none;
+    border: none;
+    font-size: 15px;
+    height: 85%;
+    width: 88%;
+}
+
+#Search::-webkit-search-cancel-button{
+    position:absolute;
+    right:2px;  
+    -webkit-appearance: none;
+    background: url(../../Assets/Book/close.png) no-repeat 50% 50%;
+    height: 13px;
+    width: 13px;
+}
+
+.headerIcons{
+     display: flex;
+     flex-direction: row;
+     align-items: center; 
+     justify-content: space-between;
+     width: 8%;
+     margin-left: 14%;
+}
+
+.icon{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+#i1{
+    width: 30px;
+}
+
+#i2{
+    width: 28px;
+    margin-top: 3px;
+}
+
+.txt{
+    padding-top: 3px;
+    color: white;
+    font-size: 10px;
+    text-align: center;
+}
+
+.BooksContainer{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 70%;
+    min-height: 684px;
+    margin-left: 14%;
+}
+
+.displayBooksHeader{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+}
+
+#bookheader{
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    width: 15%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#bh{
+    opacity: 0.8;
+}
+
+#bh2{
+    padding-top: 8px;
+}
+
+.sortContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 15%;
+    box-shadow: none;
+}
+
+.AllBooks{
+    display: flex;
+    flex-direction: row;
+    flex-flow: wrap;
+    min-height: 618px;
+    column-gap: 3%;
+}
+
+
+.displaybook{
+    display: flex;
+    flex-direction: column;
+    width: 22.5%;
+    max-height: 350px;
+    margin-bottom: 20px;
+    box-shadow: 0.5px 0.5px 4px 0.5px lightgrey;
+}
+
+.displaybook:hover{
+    box-shadow: 0.5px 0.5px 4px 0.5px gray;
+}
+
+.Img{
+    display: flex;
+    background-color: rgb(240, 241, 254);
+    justify-content: center;
+    align-items: center;
+    max-height: 600px;
+    overflow-y: hidden;
+}
+
+.bookimg{
+    padding: 50px 0px;
+    max-width: 110px;
+}
+
+
+#Bookfields{
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+    min-height: 160px;
+}
+
+.p1{
+    margin: 3% 0% 0% 0%;
+    font-weight: 600;
+}
+
+.p2{
+    color: gray;
+    margin: 2% 0% 0% 0%;
+    font-size: 13px;
+}
+
+.rating{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 35%;
+    height: 19px;
+    margin-top: 6px;
+}
+
+.totalrating{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-radius: 2px;
+    background-color: rgb(4, 115, 30);
+    padding: 2px 2px 0px 2px;
+    height: 100%;
+}
+
+.p3{
+    color: white;
+    margin: 0%;
+    width: 25px;
+    font-size: 13.5px;
+}
+
+#ratingstar{
+    margin-top: -2px;
+    color: white;
+    width: 15px;
+}
+
+.p4{
+    margin: 0px 0px 0px 5px;
+    font-size: 13px;
+}
+
+.price{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 90%;
+    height: 12%;
+    margin-top: 3%;
+}
+
+.p5{
+    font-size: 14px;
+    margin: 0%;
+    font-weight: 600;
+}
+
+.p6{
+    color: gray;
+    font-size: 12px;
+    margin: 0% 0% 0% 6%;
+    text-decoration: line-through;
+}
+
+.footerContainer{
+    display: flex;
+    align-items: center;
+    background-color: rgb(18, 10, 10);
+    height: 52px;
+}
+
+#bf{
+    margin: 10%;
+    color: silver;
+    font-size: 13px;
+}
