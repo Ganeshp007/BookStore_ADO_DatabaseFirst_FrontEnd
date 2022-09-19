@@ -5,32 +5,33 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="refresh" content="7200">
-    <link rel="stylesheet" href="../../../Styles/Home/Dashboard.css">
+    <link rel="stylesheet" href="../../Styles/Other/Quickview.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <title>BookStore-Home</title>
+    <title>BookStore-QuickView</title>
 </head>
 <body>
     <div class="headerContainer">
         <div class="logo">
-            <img id="book" src="../../../Assets/Book/BookIcon.png" alt="">
+            <img id="book" src="../../Assets/Book/BookIcon.png" alt="">
             <h1 id="logotext">BookStore</h1>
         </div>
         <div class="searchbox">
             <button class="searchicon ">
-                <img src="../../../Assets/Book/search.png" />
+                <img src="../../Assets/Book/search.png" />
             </button>
             <input class="search-input" type="search" id="Search" placeholder="Search book" autocomplete="off" />
         </div>
         <div class="headerIcons">
             <div class="icon">
-                <img id="i1" src="../../../Assets/Book/person.png" alt="">
+                <img id="i1" src="../../Assets/Book/person.png" alt="">
                 <span class="txt">Person</span>
             </div>
             <div class="icon">
-                <img id="i2" src="../../../Assets/Book/shoppingCart.png" alt="">    
+                <img id="i2" src="../../Assets/Book/shoppingCart.png" alt="">    
                 <span class="txt" id="c1">Cart</span> 
             </div>
-            <div class="icon" id="wishlist">
+            <div class="icon">
                 <img id="i3" src="../../Assets/Book/wishlist.png" alt="">    
                 <span class="txt t1" id="wh1">Wishlist</span> 
             </div>
@@ -39,25 +40,17 @@
     <div class="BooksContainer">
         <div class="displayBooksHeader">
             <div id="bookheader">
-                <h1 id="bh">Books</h1>
+                <span id="bh">Home / Book</span>
                 <small id="bh2"></small>
             </div>
-            <div class="sortContainer">
-                <div class="sortBooks">
-                    <select >
-                    <option value="" disabled selected hidden>Sort by relevance</option>
-                    <option value="Price Low to High">Price Low to High</option>
-                    <option value="Price Hight to Low">Price Hight to Low</option>
-                    <option value="New Arrival">New Arrival</option>
-                    </select>
-                </div>
-            </div>
         </div>
-        <div class="AllBooks" id="Books"></div>
+        <div class="BooksInfoContainer" id="Book"></div>
     </div>
     <div class="footerContainer">
            <span id="bf">Copyright © 2022.Bookstore Private Limited.All Rights Reserved </span>
     </div>
 </body>
-<script src="../../../Scripts/Home/Dashboard.js"></script>
+
+<script src="../../Scripts/Other/Quickview.js"></script>
+
 </html>

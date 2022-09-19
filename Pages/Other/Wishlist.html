@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="refresh" content="7200">
+    <link rel="stylesheet" href="../../Styles/Other/Wishlist.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>BookStore-QuickView</title>
+</head>
+<body>
+    <div class="headerContainer">
+        <div class="logo">
+            <img id="book" src="../../Assets/Book/BookIcon.png" alt="">
+            <h1 id="logotext">BookStore</h1>
+        </div>
+        <div class="searchbox">
+            <button class="searchicon ">
+                <img src="../../Assets/Book/search.png" />
+            </button>
+            <input class="search-input" type="search" id="Search" placeholder="Search book" autocomplete="off" />
+        </div>
+        <div class="headerIcons">
+            <div class="icon">
+                <img id="i1" src="../../Assets/Book/person.png" alt="">
+                <span class="txt">Person</span>
+            </div>
+            <div class="icon">
+                <img id="i2" src="../../Assets/Book/shoppingCart.png" alt="">    
+                <span class="txt" id="c1">Cart</span> 
+            </div>
+        </div>
+    </div>
+    <div class="BooksContainer">
+        <div class="displayBooksHeader">
+            <div id="bookheader">
+                <span id="bh">Home / My Wishlist</span>
+            </div>
+        </div>
+        <div class="wishlistheader">
+            <span id="wh1">My Wishlist</span>
+            <span id="wh2"></span>
+        </div>
+        <div class="WishlistContainer" id="wishlist"></div>
+    </div>
+    <div class="footerContainer">
+        <span id="bf">Copyright © 2022.Bookstore Private Limited.All Rights Reserved </span>
+    </div>
+</body>
+
+<script src="../../Scripts/Other/Wishlist.js"></script>
+
+</html>

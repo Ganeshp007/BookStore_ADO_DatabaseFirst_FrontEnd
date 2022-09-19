@@ -1,0 +1,586 @@
+body{
+    font-family: sans-serif;
+    padding: 0%;
+    margin: 0%;
+}
+
+.headerContainer{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    min-height: 55px;
+    max-height: 55px;
+    background-color:  rgb(189, 10, 10);
+}
+
+.logo{
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0% 3% 0% 12%;
+}
+
+#book{
+    background-color:  rgb(226, 6, 6);
+    width: 35px ;
+}
+
+#logotext{
+    padding: 2px 0px 0px 7px;
+    color: white;
+    font: 1.3em sans-serif;
+}
+
+.searchbox{
+    display: flex;
+    flex-direction:row ;
+    align-items: center;
+    width: 40%;
+    height: 38px;
+    background-color: white;
+    margin-top: 7px;
+    border-radius: 8px;
+}
+
+.searchbox .searchicon{
+    display: flex;
+    align-items: center;
+    background: transparent;
+    margin: 0px 10px 0px 10px;
+}
+
+.searchbox button{
+    border: transparent;
+}
+
+.searchbox img{
+   width: 22px;
+   height: 25px;
+}
+
+.searchbox button:hover{
+    background-color: lightgrey;
+    border-radius: 50%;
+}
+
+.searchbox input{
+    outline: none;
+    border: none;
+    font-size: 15px;
+    height: 85%;
+    width: 88%;
+}
+
+#Search::-webkit-search-cancel-button{
+    position:absolute;
+    right:2px;  
+    -webkit-appearance: none;
+    background: url(../../Assets/Book/close.png) no-repeat 50% 50%;
+    height: 13px;
+    width: 13px;
+}
+
+.headerIcons{
+     display: flex;
+     flex-direction: row;
+     align-items: center; 
+     justify-content: space-between;
+     width: 12%;
+     margin-left: 14%;
+}
+
+.icon{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+#i1{
+    width: 28px;
+}
+
+#i2{
+    width: 28px;
+    margin-top: 3px;
+}
+
+#i3{
+    width: 26px;
+    margin-top: 3px;
+}
+
+.txt{
+    padding-top: 3px;
+    color: white;
+    font-size: 10px;
+    text-align: center;
+}
+
+.t1{
+    margin-top: 2px;
+}
+
+.BooksContainer{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 70%;
+    min-height: 684px;
+    margin-left: 14%;
+}
+
+.displayBooksHeader{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+}
+
+#bookheader{
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    width: 20%;
+    align-items: center;
+    font-size: 16px;
+}
+
+#bh{
+    font-weight: 600;
+    opacity: 0.8;
+}
+
+#bh2{
+    padding-left: 8px;
+}
+
+.BooksInfoContainer{
+    display: flex;
+    flex-direction: row;
+    min-height: 618px;
+}
+
+.leftContainer{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    height: 610px;
+}
+
+.bookcover{
+    display: flex;
+    background-color: rgb(252, 252, 252);
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: 70%;
+    overflow-y: hidden;
+    border: 1px solid lightgray;
+}
+
+#bookImg{
+    width:70% ;
+}
+
+.btns{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 18%;
+}
+
+.addToCart{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(149, 44, 44);
+    width: 40%;
+    height: 40px;
+    cursor: pointer;
+}
+
+.addToCart:hover{
+    background-color: rgb(122, 31, 31);
+}
+
+.addToWishList{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(54, 53, 53);
+    width: 40%;
+    height: 40px;
+    cursor: pointer;
+}
+
+.addToWishList:hover{
+    background-color: rgb(41, 40, 40);
+}
+
+#ltxt{
+    color: white;
+}
+
+#wishIcon{
+    padding-right: 10px;
+}
+
+.rightContainer{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+}
+
+#Bookfields{
+    display: flex;
+    flex-direction: column;
+    padding-left: 15px;
+    min-height: 146px;
+}
+
+.p1{
+    margin: 0%;
+    min-height: 28px;
+    font-size: 20px;
+    font-weight: 600;
+    width: 98%;
+}
+
+.p2{
+    color: gray;
+    margin: 0%;
+    font-size: 17px;
+}
+
+.rating{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 35%;
+    height: 19px;
+    margin-top: 1%;
+}
+
+.totalrating{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-radius: 2px;
+    background-color: rgb(4, 115, 30);
+    padding: 2px 2px 0px 2px;
+    height: 100%;
+}
+
+.p3{
+    color: white;
+    margin: 0%;
+    width: 25px;
+    font-size: 13.5px;
+}
+
+#ratingstar{
+    margin-top: -2px;
+    color: white;
+    width: 15px;
+}
+
+.p4{
+    margin: 0px 0px 0px 5px;
+    font-size: 13px;
+}
+
+.price{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 90%;
+    height: 22%;
+    padding-top: 10px;
+}
+
+.p5{
+    font-size: 25px;
+    margin: 0%;
+    font-weight: 600;
+}
+
+.p6{
+    color: gray;
+    font-size: 14px;
+    margin: 0% 0% 0% 2%;
+    text-decoration: line-through;
+}
+
+#rhr1{
+    margin: 1% 0% 2% 3%;
+    background-color: rgb(204, 225, 232);
+    width: 96%;
+}
+
+.bookDesc{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    padding: 15px 0px 0px 15px;
+    min-height: 80px;
+}
+
+#desc{
+    color: grey;
+    font-size: 17.5px;
+}
+
+#p7{
+    color: rgb(61, 61, 61);
+    margin-top: 1%;
+    font-size: 15px;
+    width: 98%;
+}
+
+#rhr2{
+    height: -5px;
+    margin: 3% 0% 0% 0.8%;
+    background-color: rgb(204, 225, 232);
+    width: 98%;
+}
+
+.CustmFeed{
+    display: flex;
+    flex-direction: column;
+    padding: 15px 0px 0px 15px;
+    min-height: 180px;
+    margin-bottom: 20px;
+}
+
+#feedh1{
+    font-size: 18px;
+    font-weight: 600;
+    color: rgb(26, 26, 26);
+    margin-bottom: 2%;
+}
+
+.feedContainer{
+    display: flex;
+    flex-direction: column;
+    min-height: 160px;
+    padding: 20px;
+    background-color: rgb(247, 248, 250);
+}
+
+.ratingfeed {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    width: 50%;
+    height: 30%;
+    margin-bottom: 1%;
+}
+
+#feedh2{
+    font-size: 13px;
+    font-weight: 600;
+    color: rgb(37, 36, 36);
+}
+
+.stars {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 60%;
+    height: 30px;
+    margin: 0%;
+    padding: 0px;
+    font-size: 17px;
+}
+
+.stars li{
+    padding: 3px 9px 0px 0px ;
+    list-style: none;
+}
+
+.yellow{
+    color: rgb(75, 75, 72);
+}
+
+.golden{
+    font-size: 18px;
+    color: goldenrod;
+}
+
+.comment{
+    width: 90%;
+    min-height: 80px;
+    background-color: white;
+    border: 0.1px solid rgb(208, 201, 201);
+}
+
+textarea{
+    font-family: 'Open Sans';
+    font-size: 14px;
+    font-weight: 500;
+    resize:none; 
+    outline: none;
+    border: none;
+}
+    
+textarea::-webkit-scrollbar{
+    width: 0px;
+}
+
+.t2{
+    width: 90%;
+    height: 90%;
+}
+    
+.CustmFeedBtns{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 90%;
+    min-height: 28%;
+    column-gap: 60%;
+    font-size: 14px;
+}
+ 
+#btn3{
+    color: white;
+    text-align: center;
+    background-color: rgb(138, 18, 18);
+    width: 70px;
+    height: 50%;
+    padding-top: 5px;
+    margin-left: 6%;
+    cursor: pointer;
+}
+
+#btn3:hover{
+    background-color: rgb(169, 25, 25);
+}
+
+#btn4{
+    text-align: center;
+    width: 70px;
+    height: 50%;
+    color: white;
+    background-color: rgb(12, 149, 213);
+    padding-top: 5px;
+    cursor: pointer;
+}
+
+#btn4:hover{
+    background-color: rgb(10, 128, 183);
+}
+
+.reivews{
+    display: flex;
+    flex-direction: column;
+    display: flex;
+    flex-direction: column;
+    width: 97%;
+    min-height: 35px;
+    margin-left:15px;
+}
+
+#btn5{
+    display: flex;
+    align-items: center;
+    width: 100px;
+    height: 27px;
+    border: 1px solid lightgrey;
+    padding-left: 10px;
+    cursor: pointer;
+    border-radius: 20px;
+    box-shadow: 0.5px 0.5px 2px 0.2px rgb(96, 94, 94);
+    font-size: 14px;
+}
+
+.showReviews{
+     min-height: 5px;
+     display: none;
+     padding: 15px 10px 0px 15px;
+}
+
+.show{
+    display: block;
+}
+
+.feedbackCard{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    min-height: 90px;
+}
+
+#feedheader{
+    display: flex;
+    align-items: center;
+    height: 28px;
+}
+
+#fCIcon{
+    background-color: rgb(144, 139, 139);
+    width: 25px;
+    border-radius: 16px;
+    margin-right: 10px;
+}
+
+.fC1{
+   font-size: 15px;
+   margin: 0%;
+   font-weight: 600;
+   color: rgb(29, 28, 28);
+}
+
+#fCRating{
+    padding-left: 35px;
+}
+
+.fstars{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 60%;
+    height: 30px;
+    margin: 0%;
+    padding: 0px;
+    font-size: 17px;
+}
+
+.fstars li{
+    padding: 3px 9px 0px 0px ;
+    list-style: none;
+}
+
+
+#fCComment{
+    padding-left: 35px;
+    margin: 5px 0px 5px 0px;
+    min-height: 18px;
+}
+
+.fC2{
+    color: rgb(121, 121, 121);
+    font-size: 14px;
+    margin: 0%;
+}
+
+
+
+.footerContainer{
+    display: flex;
+    align-items: center;
+    background-color: rgb(18, 10, 10);
+    height: 52px;
+}
+
+#bf{
+    margin: 10%;
+    color: silver;
+    font-size: 13px;
+}
