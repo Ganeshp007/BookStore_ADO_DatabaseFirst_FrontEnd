@@ -30,7 +30,7 @@ function getAllBooks() {
     })
 }
 
-// function displays the filtered notearray from respective event listener using template literals to pass code dynamically
+// function displays the filtered bookarray from respective event listener using template literals to pass code dynamically
 function displayAllBooks(Booksdata) {
     let counter = 0;
     for (let i = 0; i < Booksdata.length; i++) {
@@ -38,7 +38,7 @@ function displayAllBooks(Booksdata) {
     }
     document.getElementById('bh2').innerHTML=`(${counter} items)`;
     document.getElementById('Books').innerHTML = Booksdata.map((Book) =>
-    `<div class="displaybook">
+    `<div class="displaybook" onclick="quickView(${Book.bookId})">
         <div class="Img">
             <img class="bookimg" src="${Book.bookImg}" alt="">    
         </div>
@@ -48,8 +48,8 @@ function displayAllBooks(Booksdata) {
             <div class=rating>
                <div class=totalrating>
                 <P class="p3" >${Book.totalRating}</P>
-                <img id="ratingstar" src="../../../Assets/Book/ratingStar.png" alt="">
-                </div>
+                <img id="ratingstar" src="../../Assets/Book/ratingStar.png" alt="">
+               </div>
                <P class="p4" >(${Book.ratingCount})</P>
             </div>
             <div class="price">
@@ -61,6 +61,23 @@ function displayAllBooks(Booksdata) {
     `     
 ).join(' ');
 };
+
+//function that display all info about book clicked
+function quickView(bookId){
+    let id=localStorage.setItem('bookId',bookId);
+    if(id!=0)
+    window.location.href = 'http://127.0.0.1:5501/Pages/Other/Quickview.html';
+    else
+    alert('Something went wrong while displaying book details!!')
+}
+
+
+const wishlistIcon=document.getElementById('wishlist');
+
+wishlistIcon.addEventListener('click',()=>{
+    window.location.href='http://127.0.0.1:5501/Pages/Other/Wishlist.html';
+})
+
 
 //function to get token if not expired or else it will return
 function get_tokenWithExpiry(key) {

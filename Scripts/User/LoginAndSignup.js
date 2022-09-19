@@ -126,7 +126,7 @@ window.addEventListener('DOMContentLoaded', () => {
         console.log(result);
         set_tokenWithExpiry('token', result.data, 7200000); //2hrs=7,200,000 ms
         ResetLoginPage();
-        window.location.href = "http://127.0.0.1:5501/Pages/User/Home/Dashboard.html";
+        window.location.href = "http://127.0.0.1:5501/Pages/Home/Dashboard.html";
       },
       error: function (error) {
         console.log(error);
